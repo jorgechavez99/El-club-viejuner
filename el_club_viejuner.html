@@ -30,20 +30,21 @@
 
         <li>
             <label for="edad">Edad: </label>
-             <input type="number" placeholder="Tu edad" tabindex="3"></br>
+             <input type="number" placeholder="Tu edad" min=1  tabindex="3"></br>
             
         </li></br>
 
         <li>
             <label>Sexo: </label> 
-            <input type="radio" id="hombre" name="male" value="hombre" tabindex="4"> Hombre
-            <input type="radio"
-            id="mujer" name="female" value="mujer" tabindex="5"> Mujer
+            
+            <input type="radio" id="hombre" name="sexo" value="hombre" tabindex="4"> <label for="=hombre">Hombre</label>
+            <input type="radio" id="mujer" name="sexo" value="mujer" tabindex="5"> <label for="=mujer">Mujer</label>
         </li></br>
 
-        <li>Me siento viejuner: 
-            <input type="checkbox" tabindex="6">si
-            <input type="checkbox" tabindex="7">no</br>
+        <li>
+            <label>Me siento viejuner: </label>
+            <input type="checkbox" id="yes" name="verifica" value="yes" tabindex="6"> <label for="=yes">Yes</label>
+            <input type="checkbox" id="no" name="verifica" value="no" tabindex="7"> <label for="=no">No</label>
         </li></br>
 
         <li><label>
@@ -53,8 +54,8 @@
                            
      </li></br>
     
-    <header>Circunstancias:</header></br> 
-
+    <header>Circunstancias:</header></br>
+    
         <li><label for="email">Correo electrónico:</label><input type="email" placeholder="Tu email" tabindex="9"></li></br>
 
         <li><label for="phone">Telefono</label><input type="tel" placeholder="Tu telefono" tabindex="10"></li></br>
@@ -62,6 +63,7 @@
     </ul>
 </section>
 <input type="submit" onclick="alert('Muchas gracias por rellenar el formulario.')">
+<input type="reset" value="Reset">
 
 </fieldset>
 </body> 
