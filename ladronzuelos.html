@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los ladronzuelos de bicicletas</title>
+</head>
+<body>
+<header>LOS LADRONZUELOS DE BICICLETAS</header>
+<fieldset>
+<section>
+  
+  <ul>
+    <form>
+            <li>       
+           <label for="day">Dia: </label> 
+           <input type="date" placeholder="dia" autofocus tabindex="1">
+
+        </li></br>
+
+        <li>
+            <label for="hour">Hora: </label>
+            <input type="time" tabindex="2">
+
+        </li></br>
+
+        <li>
+            <label for="color">Color de la bicicleta: </label>
+             <input type="color" tabindex="3"></br>
+            
+        </li></br>
+
+        <li>
+            <label for="rango">Rango deprecio </label> 
+            <input type="range" id="rango" name="rango" value="range" tabindex="4">
+        </li></br>
+
+        <li>
+            <label for="selector">Tipo de bicicleta</label>    
+             <select name="selector">
+                <optgroup label="Paseo">
+                    <option value="Señorial">Señorial</option>
+                    <option value="plebeyos">Anti-plebeyos</option>
+                    <option value="hombro">PorEncimaDelHombro</option>
+                </optgroup>
+                <optgroup label="Montaña">
+                    <option value="gamusinos">Gamusinos</option>
+                    <option value="flores">Hueleflores premium</option>
+                    <option value="fango">Fango lover</option>
+                </optgroup>
+                <optgroup label="Carreras">
+                    <option value="metroymedio">Metroymedio</option>
+                    <option value="Fluorescente">3 de la tarde.Fluorescente edition </option>
+                    <option value="Grupitors">Grupitors</option>
+                </optgroup>
+             </select>
+        </li></br>
+        <li>
+            <label for="accesorio">Accesorios: </label>    
+             <select name="accesorio" id="accesorios" multiple>
+                    <option value="ruedines">Ruedines</option>
+                    <option value="pegatinas">Pegatinas</option>
+                    <option value="cestita">Cestita</option>
+                    <option value="bomba">Bomba</option>
+                    <option value="timbre">Timbre</option>
+                    <option value="foco">Foco</option>
+             </select>
+        </li></br>
+        <li>
+            <label for="marcas">¿Que marca era?: </label>    
+             <input type="text" name="marcas" list="marca">
+             <datalist id="marca">
+                    <option value="specialized"></option>
+                    <option value="trek"></option>
+                    <option value="merida"></option>
+                    <option value="scott"></option>
+                    <option value="giant"></option>
+                    <option value="cube"></option>
+                    <option value="lapierre"></option>
+                    <option value="orbea"></option>
+                    <option value="cannondale"></option>
+                    <option value="bmc"></option>
+                    <option value="canyon"></option>
+                    <option value="look"></option>
+                    <option value="protek"></option>
+                    <option value="megamo"></option>
+                    <option value="pinarello"></option>
+                    <option value="bianchi"></option>
+                    <option value="bh"></option>
+                    <option value="factor"></option>
+                    <option value="ghost"></option>
+                    <option value="cervélo"></option>
+                    <option value="argon"></option>
+            </datalist>
+             </select>
+        </li></br>
+        
+    </form>
+ </ul>
+    
+</section>
+<input type="submit" onclick="alert('¡Muchas gracias!')">
+ </fieldset>
+</body>
+</html>
