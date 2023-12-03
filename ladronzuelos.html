@@ -1,75 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los ladronzuelos de bicicletas</title>
+    <title>LADRONZUELOS</title>
 </head>
+
 <body>
-<header>LOS LADRONZUELOS DE BICICLETAS</header>
-<fieldset>
-<section>
-  
-  <ul>
+    <header>LOS LADRONZUELOS DE BICICLETAS</header>
     <form>
-            <li>       
-           <label for="day">Dia: </label> 
-           <input type="date" placeholder="dia" autofocus tabindex="1">
-
-        </li></br>
-
-        <li>
-            <label for="hour">Hora: </label>
-            <input type="time" tabindex="2">
-
-        </li></br>
-
-        <li>
-            <label for="color">Color de la bicicleta: </label>
-             <input type="color" tabindex="3"></br>
-            
-        </li></br>
-
-        <li>
-            <label for="rango">Rango de precio </label> 
-            <input type="range" id="rango" name="rango" value="1" tabindex="4" min="1" max="1000">
-        </li></br>
-
-        <li>
-            <label for="selector">Tipo de bicicleta</label>    
-             <select name="selector">
-                <optgroup label="Paseo">
-                    <option value="Señorial">Señorial</option>
-                    <option value="plebeyos">Anti-plebeyos</option>
-                    <option value="hombro">PorEncimaDelHombro</option>
-                </optgroup>
-                <optgroup label="Montaña">
-                    <option value="gamusinos">Gamusinos</option>
-                    <option value="flores">Hueleflores premium</option>
-                    <option value="fango">Fango lover</option>
-                </optgroup>
-                <optgroup label="Carreras">
-                    <option value="metroymedio">Metroymedio</option>
-                    <option value="Fluorescente">3 de la tarde.Fluorescente edition </option>
-                    <option value="Grupitors">Grupitors</option>
-                </optgroup>
-             </select>
-        </li></br>
-        <li>
-            <label for="accesorio">Accesorios: </label>    
-             <select name="accesorio" id="accesorios" multiple>
+        <fieldset>
+            <legend>Favor de llenar este formulario</legend>
+            <div>
+                <label for="day">Dia: </label>
+                <input type="date" id="day" name="day" autofocus tabindex="1">
+            </div>
+            <div>
+                <label for="hour">Hora: </label>
+                <input type="time" id="hour" name="hour" tabindex="2">
+            </div>
+            <div>
+                <label for="colorb">Color de la bicicleta: </label>
+                <input type="color" id="colorb" name="colorb" tabindex="3"></br>
+            </div>
+            <div>
+                <label for="rang">Rango de precio </label>
+                <input type="range" id="rang" name="rang" value="1" tabindex="4" min="1" max="1000">
+            </div>
+            <div>
+                <label for="selector">Tipo de bicicleta</label>
+                <select name="selector" id="selector" tabindex="5">
+                    <optgroup label="Paseo">
+                        <option value="Señorial">Señorial</option>
+                        <option value="plebeyos">Anti-plebeyos</option>
+                        <option value="hombro">PorEncimaDelHombro</option>
+                    </optgroup>
+                    <optgroup label="Montaña">
+                        <option value="gamusinos">Gamusinos</option>
+                        <option value="flores">Hueleflores premium</option>
+                        <option value="fango">Fango lover</option>
+                    </optgroup>
+                    <optgroup label="Carreras">
+                        <option value="metroymedio">Metroymedio</option>
+                        <option value="Fluorescente">3 de la tarde.Fluorescente edition </option>
+                        <option value="Grupitors">Grupitors</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="accesorio">Accesorios: </label>
+                <select name="accesorio" id="accesorio" multiple>
                     <option value="ruedines">Ruedines</option>
                     <option value="pegatinas">Pegatinas</option>
                     <option value="cestita">Cestita</option>
                     <option value="bomba">Bomba</option>
                     <option value="timbre">Timbre</option>
                     <option value="foco">Foco</option>
-             </select>
-        </li></br>
-        <li>
-            <label for="marcas">¿Que marca era?: </label>    
-             <input type="text" name="marcas" list="marca">
-             <datalist id="marca">
+                </select>
+            </div>
+            <div>
+                <label for="marcas">¿Que marca era?: </label>
+                <input type="text" name="marcas" list="marcas">
+                <datalist id="marcas">
                     <option value="specialized"></option>
                     <option value="trek"></option>
                     <option value="merida"></option>
@@ -91,16 +84,14 @@
                     <option value="ghost"></option>
                     <option value="cervélo"></option>
                     <option value="argon"></option>
-            </datalist>
-             </select>
-        </li></br>
-        
+                </datalist>
+                </select>
+            </div>
+        </fieldset>
+        <input type="submit" id="enviar" name="enviar" onclick="alert ('Enviado')">
+        <input type="reset" id="restablecer" name="restablecer">
+
     </form>
- </ul>
-    
-</section>
-<input type="submit" onclick="alert('¡Muchas gracias!')">
-<input type="reset" value="Reset" />
- </fieldset>
 </body>
+
 </html>

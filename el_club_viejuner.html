@@ -1,70 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EL CLUB VIEJUNER</title>
-    
+
 </head>
 
 <body>
+    <header>
+        <h1>EL CLUB VIEJUNER</h1>
+    </header>
 
-  <header>EL CLUB VIEJUNER</header>
-<fieldset>
-<section>
-   <ul>
     <form>
-    <header>Tú:</header></br>
+        <fieldset>
+            <legend>Tu:</legend>
 
-        <li>       
-           <label for="name">Nombre: </label> 
-           <input type="text" placeholder="Tu nombre" autofocus tabindex="1">
+            <div>
+                <label for="name">Nombre: </label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" autofocus tabindex="1">
+            </div>
+            <div>
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" tabindex="2">
+            </div>
+            <div>
+                <label for="age">Edad: </label>
+                <input type="number" id="age" name="age" placeholder="Tu edad" min=1 tabindex="3">
+            </div>
+            <div>
+                <label>Sexo: </label>
+                <label for="men">Hombre</label>
+                <input type="radio" id="men" name="sex" value="men" tabindex="4">
 
-        </li></br>
+                <label for="fem">Mujer</label>
+                <input type="radio" id="fem" name="sex" value="fem" tabindex="5">
 
-        <li>
-            <label for="apellido">Apellido: </label>
-            <input type="text" placeholder="Tu apellido" tabindex="2">
+            </div>
+            <div>
+                <label for="viejuner">Me siento viejuner: </label>
+                <input type="checkbox" id="viejuner" name="viejuner" tabindex="6">
+            </div>
+            <div>
+                <label for="sobreti">Escribe algo sobre tí:</label>
+                <textarea name="info" id="sobreti" name="sobreti" cols="50" rows="5" tabindex="8"> </textarea>
 
-        </li></br>
+            </div>
 
-        <li>
-            <label for="edad">Edad: </label>
-             <input type="number" placeholder="Tu edad" min=1  tabindex="3"></br>
-            
-        </li></br>
+        </fieldset>
 
-        <li>
-            <label>Sexo: </label> 
-            
-            <input type="radio" id="hombre" name="sexo" value="hombre" tabindex="4"> <label for="=hombre">Hombre</label>
-            <input type="radio" id="mujer" name="sexo" value="mujer" tabindex="5"> <label for="=mujer">Mujer</label>
-        </li></br>
-
-        <li>
-            <label>Me siento viejuner: </label>
-            <input type="checkbox" id="yes" name="verifica" value="yes" tabindex="6"> <label for="=yes">Yes</label>
-            <input type="checkbox" id="no" name="verifica" value="no" tabindex="7"> <label for="=no">No</label>
-        </li></br>
-
-        <li><label>
-            Escribe algo sobre tí:
-            </label></br>
-            <textarea name="info" id="escribe" cols="50" rows="5" tabindex="8"> </textarea>
-                           
-     </li></br>
-    
-    <header>Circunstancias:</header></br>
-    
-        <li><label for="email">Correo electrónico:</label><input type="email" placeholder="Tu email" tabindex="9"></li></br>
-
-        <li><label for="phone">Telefono</label><input type="tel" placeholder="Tu telefono" tabindex="10"></li></br>
+        <fieldset>
+            <legend>Circunstancias</legend>
+            <div>
+                <label for="email">Correo electrónico:</label><input type="email" id="email" name="email"
+                    placeholder="Tu email" tabindex="9">
+            </div>
+            <div>
+                <label for="phone">Telefono</label><input type="tel" id="phone" name="phone" placeholder="Tu telefono"
+                    tabindex="10">
+            </div>
+        </fieldset>
+        <input type="submit" onclick="alert('Muchas gracias por rellenar el formulario.')">
+        <input type="reset" value="Reset">
     </form>
-    </ul>
-</section>
-<input type="submit" onclick="alert('Muchas gracias por rellenar el formulario.')">
-<input type="reset" value="Reset">
 
-</fieldset>
-</body> 
+</body>
+
 </html>
